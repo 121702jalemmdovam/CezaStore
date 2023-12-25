@@ -1,0 +1,732 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  position: relative;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  width: 85%;
+  margin: auto;
+}
+header nav .collapseDiv .navbar-nav .navItem {
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+}
+header nav .collapseDiv .navbar-nav .navItem:hover {
+  color: #717fe0;
+}
+header nav .collapseDiv .sideRight {
+  width: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
+header nav .collapseDiv .sideRight a {
+  text-decoration: none;
+  background-color: transparent;
+  margin-right: 20px;
+}
+
+#Collection {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://preview.colorlib.com/theme/cozastore/images/slide-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Collection .container {
+  margin-top: 20px;
+}
+#Collection .container .CollectionItem {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#Collection .container .CollectionItem span {
+  font-family: Poppins-Regular;
+  font-size: 28px;
+  color: black;
+}
+#Collection .container .CollectionItem h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #212529;
+}
+#Collection .container .CollectionItem button {
+  width: 120px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  background-color: #717fe0;
+  color: white;
+  font-weight: 600;
+}
+#Collection .container .CollectionItem button:hover {
+  background-color: black;
+  cursor: #717fe0;
+}
+#Collection .container .CollectionItem img {
+  width: 100%;
+  height: auto;
+}
+
+#Spring {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+#Spring .container {
+  margin-top: 20px;
+}
+#Spring .container .SpringCard {
+  width: 100%;
+  height: auto;
+  border: 1px solid #EBE7E4;
+  position: relative;
+  margin: 10px;
+}
+#Spring .container .SpringCard .text {
+  position: absolute;
+  margin-top: 10px;
+  padding: 20px;
+}
+#Spring .container .SpringCard .text h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+#Spring .container .SpringCard .text span {
+  font-size: 13px;
+}
+#Spring .container .SpringCard img {
+  width: 100%;
+  height: auto;
+}
+
+#Overwiev {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+#Overwiev .container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+#Overwiev .container .OverwievItem {
+  display: flex;
+  flex-direction: column;
+}
+#Overwiev .container .OverwievItem ul {
+  display: flex;
+  margin-top: 20px;
+  gap: 30px;
+}
+#Overwiev .container .OverwievItem ul li {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #888;
+}
+#Overwiev .container .OverwievItem ul li:hover {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+#ApiProducts {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EBE7E4;
+}
+#ApiProducts .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#ApiProducts .container .ApiProductsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#ApiProducts .container #productList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+#ApiProducts .container #productList .boxDiv {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+#ApiProducts .container #productList .boxDiv img {
+  width: 100%;
+  height: auto;
+}
+#ApiProducts .container #productList .boxDiv .title {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+#ApiProducts .container #productList .boxDiv .price {
+  font-size: 20px;
+  font-weight: 600;
+  color: red;
+}
+#ApiProducts .container #productList .boxDiv button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: brown;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+}
+#ApiProducts .container #productList .boxDiv button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+#ApiProducts .container #pagi {
+  width: 160px;
+  height: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ApiProducts .container #pagi:hover {
+  background-color: red;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .foot {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .foot .footItem {
+  margin-top: 10px;
+}
+footer .foot .footItem span {
+  color: white;
+  font-size: 11px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  position: relative;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  width: 85%;
+  margin: auto;
+}
+header nav .collapseDiv .navbar-nav .navItem {
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+}
+header nav .collapseDiv .navbar-nav .navItem:hover {
+  color: #717fe0;
+}
+header nav .collapseDiv .sideRight {
+  width: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
+header nav .collapseDiv .sideRight a {
+  text-decoration: none;
+  background-color: transparent;
+  margin-right: 20px;
+}
+
+#Collection {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://preview.colorlib.com/theme/cozastore/images/slide-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Collection .container {
+  margin-top: 20px;
+}
+#Collection .container .CollectionItem {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#Collection .container .CollectionItem span {
+  font-family: Poppins-Regular;
+  font-size: 28px;
+  color: black;
+}
+#Collection .container .CollectionItem h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #212529;
+}
+#Collection .container .CollectionItem button {
+  width: 120px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  background-color: #717fe0;
+  color: white;
+  font-weight: 600;
+}
+#Collection .container .CollectionItem button:hover {
+  background-color: black;
+  cursor: #717fe0;
+}
+#Collection .container .CollectionItem img {
+  width: 100%;
+  height: auto;
+}
+
+#Spring {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+#Spring .container {
+  margin-top: 20px;
+}
+#Spring .container .SpringCard {
+  width: 100%;
+  height: auto;
+  border: 1px solid #EBE7E4;
+  position: relative;
+  margin: 10px;
+}
+#Spring .container .SpringCard .text {
+  position: absolute;
+  margin-top: 10px;
+  padding: 20px;
+}
+#Spring .container .SpringCard .text h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+#Spring .container .SpringCard .text span {
+  font-size: 13px;
+}
+#Spring .container .SpringCard img {
+  width: 100%;
+  height: auto;
+}
+
+#Overwiev {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+#Overwiev .container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+#Overwiev .container .OverwievItem {
+  display: flex;
+  flex-direction: column;
+}
+#Overwiev .container .OverwievItem ul {
+  display: flex;
+  margin-top: 20px;
+  gap: 30px;
+}
+#Overwiev .container .OverwievItem ul li {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #888;
+}
+#Overwiev .container .OverwievItem ul li:hover {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+#Productfiltered {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: #EBE7E4;
+}
+#Productfiltered .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#Product {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: #EBE7E4;
+}
+#Product .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#Product .container #products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+}
+#Product .container #products .box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+}
+#Product .container #products .box img {
+  width: 100%;
+  height: auto;
+}
+#Product .container #products .box .title {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+#Product .container #products .box .price {
+  font-size: 20px;
+  font-weight: 600;
+  color: red;
+}
+#Product .container #products .box button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: brown;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+}
+#Product .container #products .box button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .foot {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .foot .footItem {
+  margin-top: 10px;
+}
+footer .foot .footItem span {
+  color: white;
+  font-size: 11px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  position: relative;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  width: 85%;
+  margin: auto;
+}
+header nav .collapseDiv .navbar-nav .navItem {
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+}
+header nav .collapseDiv .navbar-nav .navItem:hover {
+  color: #717fe0;
+}
+header nav .collapseDiv .sideRight {
+  width: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
+header nav .collapseDiv .sideRight a {
+  text-decoration: none;
+  background-color: transparent;
+  margin-right: 20px;
+}
+
+#Collection {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://preview.colorlib.com/theme/cozastore/images/slide-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Collection .container {
+  margin-top: 20px;
+}
+#Collection .container .CollectionItem {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#Collection .container .CollectionItem span {
+  font-family: Poppins-Regular;
+  font-size: 28px;
+  color: black;
+}
+#Collection .container .CollectionItem h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #212529;
+}
+#Collection .container .CollectionItem button {
+  width: 120px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  background-color: #717fe0;
+  color: white;
+  font-weight: 600;
+}
+#Collection .container .CollectionItem button:hover {
+  background-color: black;
+  cursor: #717fe0;
+}
+#Collection .container .CollectionItem img {
+  width: 100%;
+  height: auto;
+}
+
+#Spring {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+#Spring .container {
+  margin-top: 20px;
+}
+#Spring .container .SpringCard {
+  width: 100%;
+  height: auto;
+  border: 1px solid #EBE7E4;
+  position: relative;
+  margin: 10px;
+}
+#Spring .container .SpringCard .text {
+  position: absolute;
+  margin-top: 10px;
+  padding: 20px;
+}
+#Spring .container .SpringCard .text h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+#Spring .container .SpringCard .text span {
+  font-size: 13px;
+}
+#Spring .container .SpringCard img {
+  width: 100%;
+  height: auto;
+}
+
+#Overwiev {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+#Overwiev .container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+#Overwiev .container .OverwievItem {
+  display: flex;
+  flex-direction: column;
+}
+#Overwiev .container .OverwievItem ul {
+  display: flex;
+  margin-top: 20px;
+  gap: 30px;
+}
+#Overwiev .container .OverwievItem ul li {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #888;
+}
+#Overwiev .container .OverwievItem ul li:hover {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+#FormMethod {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+#FormMethod .container {
+  margin-top: 20px;
+}
+
+#displayCard .container #display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+#displayCard .container #display .box {
+  width: 250px;
+  padding: 25px;
+  background-color: #717fe0;
+  box-shadow: 0 1px 10px rgb(0, 0, 0);
+}
+#displayCard .container #display .box span {
+  font-weight: 500;
+  font-size: 18px;
+}
+#displayCard .container #display .box button {
+  color: white;
+  background-color: brown;
+  transition: 1s;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+#displayCard .container #display .box button:hover {
+  color: #212529;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .foot {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .foot .footItem {
+  margin-top: 10px;
+}
+footer .foot .footItem span {
+  color: white;
+  font-size: 11px;
+}
